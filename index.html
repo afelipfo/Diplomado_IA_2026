@@ -12,9 +12,27 @@
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <span class="nav-brand">Diplomado IA</span>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#info">Información</a></li>
+                <li><a href="#docentes">Docentes</a></li>
+                <li><a href="#plan">Plan de Estudio</a></li>
+                <li><a href="#inscripcion" class="nav-cta">Inscríbete</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="hero-content">
+            <div class="hero-badge">Cohorte 2026 — Inscripciones abiertas</div>
             <h1>Diplomado en Inteligencia Artificial<br>Aplicada a Organizaciones</h1>
             <p class="hero-subtitle">Transforme su organización con el poder de la IA generativa y el conocimiento
                 estratégico</p>
@@ -32,6 +50,7 @@
                     <span class="stat-label">Aplicado a organizaciones</span>
                 </div>
             </div>
+            <a href="#inscripcion" class="hero-cta">Inscríbete ahora</a>
         </div>
     </section>
 
@@ -54,24 +73,40 @@
     </section>
 
     <!-- Program Info -->
-    <section class="section">
+    <section class="section" id="info">
         <div class="container">
+            <h2 class="section-title">Información del Programa</h2>
+            <div class="dates-highlight">
+                <div class="date-card">
+                    <div class="date-icon">&#128197;</div>
+                    <span class="date-label">Inscripciones hasta</span>
+                    <span class="date-value">19 de junio de 2026</span>
+                </div>
+                <div class="date-card date-card--primary">
+                    <div class="date-icon">&#127891;</div>
+                    <span class="date-label">Inicio de clases</span>
+                    <span class="date-value">22 de junio de 2026</span>
+                </div>
+            </div>
             <div class="info-box">
-                <h3>Información del Programa</h3>
                 <div class="info-grid">
                     <div class="info-item">
-                        <span class="info-label">Inicio de inscripciones</span>
-                        <span class="info-value">26 de enero de 2026</span>
-                    </div>
-                    <div class="info-item">
+                        <div class="info-icon">&#9201;</div>
                         <span class="info-label">Duración Total</span>
                         <span class="info-value">120 horas</span>
                     </div>
                     <div class="info-item">
+                        <div class="info-icon">&#128218;</div>
                         <span class="info-label">Estructura</span>
                         <span class="info-value">4 módulos de 30 horas</span>
                     </div>
                     <div class="info-item">
+                        <div class="info-icon">&#127775;</div>
+                        <span class="info-label">Modalidad</span>
+                        <span class="info-value">Presencial</span>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">&#128101;</div>
                         <span class="info-label">Público Objetivo</span>
                         <span class="info-value">Estudiantes de últimos semestres y profesionales</span>
                     </div>
@@ -81,7 +116,7 @@
     </section>
 
     <!-- Instructors Section -->
-    <section class="section instructors">
+    <section class="section instructors" id="docentes">
         <div class="container">
             <h2 class="section-title">Equipo Docente</h2>
             <div class="instructors-grid">
@@ -127,7 +162,7 @@
     </section>
 
     <!-- Modules Section -->
-    <section class="section">
+    <section class="section" id="plan">
         <div class="container">
             <h2 class="section-title">Plan de Estudio</h2>
             <div class="modules-grid">
@@ -716,6 +751,37 @@
             </div>
         </div>
     </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="inscripcion">
+        <div class="container">
+            <h2>Asegure su cupo en la cohorte 2026</h2>
+            <p>Inscripciones abiertas hasta el <strong>19 de junio de 2026</strong>. Inicio de clases: <strong>22 de junio de 2026</strong>.</p>
+            <a href="mailto:diplomado.ia@uptc.edu.co" class="cta-button">Solicitar información de inscripción</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Diplomado en IA Aplicada a Organizaciones</h3>
+                    <p>Universidad Pedagógica y Tecnológica de Colombia</p>
+                    <p>Facultad de Ciencias Económicas y Administrativas</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#info">Información</a>
+                    <a href="#docentes">Docentes</a>
+                    <a href="#plan">Plan de Estudio</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UPTC — Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
